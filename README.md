@@ -60,3 +60,29 @@ Some notes, but this ought not be necessary ...
       - A size and .data pointer are set for each of those names - you can carve them out from those
         locations in the ELF
       - radare2, headless IDA, etc. could do this most easily, probably ...
+
+
+### Observed Names of Embedded Firmwares
+
+Some names, quickly pulled out of the ELF files .. I din't bother extracting them ...
+
+  - E2010435_EB3B0416_WFEM01C0
+  - E2010650_EB3B0450_MR5_SP_LS_WFEM01S2_signed
+  - L0310600_LB3B0559_FCFG_211101_WFEM0242
+  - G004_PGL033a1PB_1024
+  - G004_PGL033a1PB_512
+  - K3110310
+  - K4110440_005_1Die
+  - K5110440_003_1Die
+  - E2010311_EB3B0305_MBFC0001_WFWM0140
+  - E2010435_EB3B0416_WFEM01C0
+  - E2010435_EB3B0416_WFEM01C0_003
+  - E2010611_EB3B0450_510_FConfig_WFEM0180_EI114000_CSDP_Generic_v13_signed
+  - E2010650_EB3B0450_MR5_SP_LS_WFEM01S2_signed
+  - 2263_BootISPTotal_Package_sign
+  - BRG003_TGL057a1PB_1024
+  - BRG003_TGL057a1PB_256
+  - BRG003_TGL057a1PB_512
+  - G003_TGL057a1PB_1024
+  - G003_TGL057a1PB_256
+  - G003_TGL057a1PB_512
