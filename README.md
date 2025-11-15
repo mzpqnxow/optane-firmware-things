@@ -12,7 +12,8 @@ available on eBay, but are EOL as far as Intel and Dell are concerned
 The firmwares here are up2date as of 11/2025. **NONE OF THESE FILES HAVE BEEN MODIFIED, THEY RETAIN THE COPYRIGHT OF THEIR RESPECTIVE OWNER(S), DELL OR INTEL**
 
 - Most of the time, you can use `intelmas -load -intelssd <drive-id>` and the firmware will
-  be successfully upgraded to the latest
+  be successfully upgraded to the latest, whether it's P4800X, P5800X, P5801X, etc. As long
+  as it's a true Intel Optane and not OEM
 - Optionally, you can use the SSDFUT tool (in `software/`) to make a bootable upgrader which
   is OS agnostic (it's a lightweight bootable Linux system that auto-runs the Intel tools)
 - For OEM drives (e.g. Dell P5800x) this is not how it works
