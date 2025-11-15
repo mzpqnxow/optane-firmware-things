@@ -9,7 +9,11 @@ available on eBay, but are EOL as far as Intel and Dell are concerned
 
 ## Firmware Upgrades
 
-The firmwares here are up2date as of 11/2025. **NONE OF THESE FILES HAVE BEEN MODIFIED, THEY RETAIN THE COPYRIGHT OF THEIR RESPECTIVE OWNER(S), DELL OR INTEL**
+The firmwares here are up2date as of 11/2025.
+
+**NONE OF THE APPLICATIONS OR FIMRWARE FILES IN THIS REPOSITORY HAVE BEEN MODIFIED, THEY ARE
+COPIES OF FILES PUBLICLY AVAILABLE FOR DOWNLOAD FROM DELL OR INTEL. THEY RETAIN THE COPYRIGHT
+OF THEIR RESPECTIVE OWNER(S)**
 
 - Most of the time, you can use `intelmas -load -intelssd <drive-id>` and the firmware will
   be successfully upgraded to the latest, whether it's P4800X, P5800X, P5801X, etc. As long
