@@ -40,3 +40,23 @@ Not complex, but helpful ...
 - `optane-set-lbaf.sh`: Set the LBAF on a drive
 
 Remember that setting the LBAF will destroy data
+
+## Extracting firmwares from SSD FUT and/or Intel MAS CLI
+
+Some notes, but this ought not be necessary ...
+
+- The SSDFUT and Intel MAS tools are auto-upgrade applications
+- All of the latest firmwares for all supported models are embedded
+  in ELF shared libraries, in the .data section
+- If you're interested in extracting these:
+  - Open the shared library
+    - The libraries can be found in `/usr/lib/intelmas/FirmwareModules/`
+    - They are named as `firmware_module_XX.so` (e.g. `firmware_module_nh.so`, `firmware_module_as.so`, etc.)
+    - I don't know what the two letters mean, I only know different firmwares are in different libraries ...
+  - Find the function named `GetTargetFirmwareBinary`
+    - Find one of the first functions it calls with two arguments
+    - Jump into the function, you will see one or more calls to string-compare-like function with a string
+      argument like "U4110553_signed" (or similar)
+      - A size and .data pointer are set for each of those names - you can carve them out from those
+        locations in the ELF
+      - radare2, headless IDA, etc. could do this most easily, probably ...
