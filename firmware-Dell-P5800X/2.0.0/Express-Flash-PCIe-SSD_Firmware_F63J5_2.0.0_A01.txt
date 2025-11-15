@@ -1,0 +1,96 @@
+Dell PowerEdge Express Flash NVMe PCIe SSD Firmware Update
+==========================================================
+
+Firmware Version: 2.0.0
+
+TABLE OF CONTENTS
+=================
+
+1.0  Introduction
+2.0  Installation Instructions
+2.1  Firmware Update using Dell Update Package (DUP)
+3.0  Important Information
+4.0  Known Limitations
+5.0  Fixes/Enhancements
+6.0  History
+
+1.0 Introduction
+================
+
+This is the firmware for the following Dell PowerEdge Express Flash PCIe SSD devices:
+	
+	Dell Express Flash Intel P5800X WI 400GB Opal U.2
+	Dell Express Flash Intel P5800X WI 400GB ISE U.2
+	Dell Express Flash Intel P5800X WI 800GB Opal U.2
+	Dell Express Flash Intel P5800X WI 800GB ISE U.2
+	Dell Express Flash Intel P5800X WI 1.6TB Opal U.2
+	Dell Express Flash Intel P5800X WI 1.6TB ISE U.2
+	
+2.0 Installation Instructions
+=============================
+
+2.1 Firmware Update using Dell Update Package (DUP)
+---------------------------------------------------
+
+Dell Update Package (Windows):
+------------------------------
+Download the executable from support.dell.com. This package can be executed from the operating system.
+
+	Installation:
+	1. Browse to the location where you downloaded the file and double-click the new file.
+	2. Click the "Install".
+	3. Follow the remaining prompts to perform the update.
+
+	
+Dell Update Package (RHEL/SLES):
+--------------------------------
+Download the executable from support.dell.com. This package can be executed from the operating system.
+
+	Installation:
+	1. Browse to the location where you downloaded the file and run the update by executing "./Express_Flash_PCIe-SSD_FRMW_LX_....BIN" from the shell.
+	2. Follow the remaining prompts to perform the update.
+
+	
+GnuPG Signature of Dell Update Package Instructions for Express_Flash_PCIe-SSD_FRMW_LX_....BIN.sign:
+----------------------------------------------------------------------------------------------------
+
+	Download:
+	Download the latest GnuPG Signature of Dell Update Package from support.dell.com.
+
+	1. Browse to the location where you downloaded the file. 
+	2. Read over the release information presented in the dialog window. 
+
+	Installation:
+	1. Import the Dell public key. (You only need to do this once on your system.)
+	2. Verify the Dell Update Package by using its signature file, Express_Flash_PCIe-SSD_FRMW_LX_....BIN.sign.
+
+3.0 Important Information
+=========================
+
+	Dell Express Flash NVMe P5800X PCIe SSDs are only supported in select Dell PowerEdge servers. To ensure that you have the correct configuration for the PCIe SSD, see the platform-specific Owner s Manual at support.dell.com/manuals.
+
+	Orderly hot swap is only supported for the Express Flash NVMe PCIe SSDs in 2.5 inch Small form factor and only when installed in a supported Dell system running a supported operating system.  Please see the Express Flash NVMe PCIe SSD User's Guide for more information on device management.
+	
+4.0 Known Limitations 
+=====================
+
+	Booting from the Express Flash NVMe PCIe SSDs is only supported from a UEFI boot device in select Dell PowerEdge systems with select operating systems.  Please see the Express Flash NVMe PCIe SSD User's Guide for more information.
+
+5.0 Fixes/Enhancements
+======================
+
+1.	Enable VDM 
+2.	Update MN part number string
+3.	Add support for NVME-MI 1.1a
+4.	Enable FW update commit action 3 
+5.	Drive self test failed after sanitize
+6.	VPD write command failed
+
+	
+6.0 History
+============
+			
+	Current Version - 2.0.0         Previous version - 1.0.0
+	
+
+	
